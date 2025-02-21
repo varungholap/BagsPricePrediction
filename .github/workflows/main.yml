@@ -25,7 +25,7 @@ jobs:
       env:
         KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
         KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-      run: kaggle kernels pull <KAGGLE_USERNAME>/<NOTEBOOK_NAME> -p .
+      run: kaggle kernels pull varungholap/bagpriceprediction-2 -p .
 
     - name: Commit and push changes
       run: |
